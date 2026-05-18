@@ -23,15 +23,15 @@ Việc của nhóm hôm nay đúng là việc một PM/PO AI làm ngoài doanh n
 
 ## 2. Track của nhóm (điền sau khi nhận track card)
 
-- **Track số / tên**: [...]
+- **Track số / tên**: Track 7 — Expert Review Simulator / Mô phỏng chuyên gia phản biện
 - **Big Ask — chép nguyên văn câu yêu cầu trong track card**:
 
 ```text
-[...]
+Xây một công cụ AI mô phỏng business owner/domain expert để phản biện Problem Framing, Solution Approach, AI Pilot Plan và pitch trước khi học viên present thật.
 ```
 
-- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): [...]
-- **2 Red Flag đáng lo nhất (chép từ track card)**: 1. [...]  2. [...]
+- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): Học viên/nhóm chuẩn bị pitch là người dùng đầu tiên; coach/instructor dùng kết quả để phát hiện nhóm nào chưa sẵn sàng trình bày.
+- **2 Red Flag đáng lo nhất (chép từ track card)**: 1. AI hỏi câu chung chung, tạo cảm giác "đã luyện" nhưng không sát nghiệp vụ.  2. AI thay thế chuyên gia thật ở bài cần nghiệp vụ sâu.
 
 ---
 
@@ -49,7 +49,7 @@ Việc của nhóm hôm nay đúng là việc một PM/PO AI làm ngoài doanh n
 
 ## 4. Ghi chú thêm (tùy nhóm)
 
-[Hạn chót, quy mô data giả định nhóm dùng, ví dụ câu hỏi thật, bất kỳ thứ gì giúp AI hiểu context.]
+Nhóm chọn hướng Quick Win nhỏ: AI sinh 5 câu phản biện cho AI Pilot Plan Day28 và mô phỏng 1 phiên business owner Q&A trong 5 phút. Pilot chỉ dùng dữ liệu mẫu/giả định từ worksheet Day28, rubric 5 Gate và 5-slide pitch; không dùng dữ liệu riêng tư ngoài bài nộp nhóm tự cung cấp.
 
 ---
 
