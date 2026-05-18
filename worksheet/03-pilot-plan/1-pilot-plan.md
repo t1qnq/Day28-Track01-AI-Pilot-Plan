@@ -35,32 +35,30 @@ Câu hỏi phụ (tự trả lời):
 
 ### Trả lời
 
-1. **Tóm vấn đề** (1 câu, từ Problem Framing): [...]
-2. **Cách làm + lý do** (từ 02-solution, 1 câu): [...]
-3. **Scope pilot**: phục vụ ai · bao nhiêu người · bao lâu · mấy phase: [...]
-4. **Người**: nhóm làm · ai review output rủi ro cao · ai có quyền quyết approve/dừng: [...]
-5. **Data**: dùng data gì (mẫu/giả định) · cơ chế privacy/citation: [...]
-6. **Budget** (tách hạng mục): API/tool [...] · thời gian người [...] · hạng mục ẩn (training, maintenance) [...]
-7. **Timeline + cổng giữa phase**: Phase 1 (… tuần) … → cổng … · Phase 2 … : [...]
-8. **Metrics** (SMART + baseline + ngưỡng + ai đo):
-
-| Metric | Đo bằng gì · ai đo | Baseline | Ngưỡng đạt |
-|---|---|---|---|
-| | | | |
-| | | | |
-
-   Leading indicator (biết kết quả sớm trong 1–2 tuần): [...]
-
-9. **Exit criteria** (định trước, ≥2 mức):
-
-| Mức | Điều kiện | Hành động | Ai có quyền dừng |
-|---|---|---|---|
-| Cảnh báo | | theo dõi / tối ưu | |
-| Nghiêm trọng | | dừng pilot | |
-
-   *Liên hệ 2 Red Flag ở `00-context.md`: exit criteria có chặn được chúng không?*
-
-10. **Adoption** (tool không ai dùng = $0): ai dùng đầu tiên · workflow đổi ở đâu · ai train/support · nếu không ai dùng thì sao: [...]
+1. **Tóm tắt vấn đề (1 câu)**: Các nhóm học viên track Product đã có draft AI Pilot Plan nhưng thiếu công cụ tự rà soát theo 5 Gate trước khi pitch, dẫn đến mất thời gian Q&A thực tế của coach vào các lỗi cơ bản.
+2. **Cách làm + Lý do KHÔNG chọn cách khác**: **Boost** — dùng AI chat tool/API có sẵn kết hợp prompt và rubric 5 Gate. KHÔNG tự build model vì tính năng này không phải lợi thế cạnh tranh cốt lõi, phần quan trọng nhất cần kiểm chứng là chất lượng câu hỏi từ prompt có bám sát rubric hay không.
+3. **Phạm vi (Scope)**: Phục vụ 25-27 nhóm học viên (track Product) đang chuẩn bị pitch. Chạy thử nghiệm trong 2 tuần, chia 2 phase nhỏ (thử trên 3-5 nhóm trước, sau đó mở rộng).
+4. **Người (Nhân sự & Quyền hạn)**: Nhóm 3 (Quang, Hưng, Thuận) chịu trách nhiệm build prompt và setup. **Coach/Instructor** đóng vai trò expert review bắt buộc cho 20 output đầu. AI KHÔNG được tự quyết định điểm số/kết quả (pass/fail).
+5. **Dữ liệu & Privacy**: Sử dụng dữ liệu draft AI Pilot Plan và worksheet học viên (ẩn danh, tự nguyện nộp). Dùng model API với zero data retention policy để bảo mật thông tin. Yêu cầu AI bắt buộc **citation** (trích dẫn) Gate hoặc rubric tương ứng khi phản biện.
+6. **Ngân sách (Budget) TỪNG HẠNG MỤC (đã bóc tách)**:
+   - Chi phí API/Tool (OpenAI GPT-4o): Tối đa ~20 USD (khoảng 25 nhóm x vài lượt hỏi).
+   - Thời gian Coach/Instructor (Chi phí người ẩn): ~5-7 giờ để review chất lượng 20 câu hỏi đầu và 2-3 giờ hỗ trợ chấm baseline (so sánh draft trước/sau khi nhóm dùng tool).
+   - Thời gian nhóm 3 setup & monitor: ~15 giờ trong 2 tuần.
+   - Thời gian học viên (Hạng mục ẩn): 15-20 phút/nhóm để đọc hướng dẫn và dùng thử.
+7. **Thời gian & Cổng giữa phase**:
+   - Tuần 1 (Phase 1): Setup prompt, chạy nghiệm thu nghiệm ngặt với 3-5 nhóm tiên phong. 
+   - **Cổng giữa**: Coach chốt "Prompt đã ổn định, AI không tự chấm pass/fail" thì mới đi tiếp.
+   - Tuần 2 (Phase 2): Mở rộng cho ~20 nhóm còn lại tự luyện, khảo sát sự hữu ích.
+8. **Chỉ số (SMART Metrics & Baseline)**:
+   - *Metric 1 (Leading)*: Tỷ lệ câu hỏi AI map đúng 1 trong 5 Gate >= 80% (Coach trực tiếp đo trên 20 mẫu).
+   - *Metric 2 (Lagging)*: Số nhóm dùng thử > 50% (13/26 nhóm) trong giai đoạn chạy pilot.
+   - *Metric 3 (Outcome)*: Giảm 50% số lỗi Gate nghiêm trọng ở bản nộp cuối (Coach chấm điểm, lấy baseline từ việc so 3-5 draft trước khi dùng AI).
+9. **Tiêu chí dừng (Exit Criteria) có trọng lượng**:
+   - *Cảnh báo*: AI hỏi chung chung, học viên phản hồi < 50% mức hữu ích → Nhóm 3 tạm dừng để chỉnh prompt trong 1 ngày.
+   - *Dừng nghiêm trọng*: AI bịa thông tin tài liệu học hoặc tự ý phán quyết "Pass/Fail" ảnh hưởng tâm lý học viên → **Instructor/Stakeholder có toàn quyền ra lệnh dừng pilot ngay lập tức** và thu hồi quyền dùng tool.
+10. **Adoption (Áp dụng thực tế)**: Nhóm 3-5 nhóm tiên phong có tính chủ động cao dùng trước. Bắt buộc gắn tool vào bước "sau khi viết draft plan" và "trước buổi pitch thử". Nếu không ai dùng, nhóm cam kết gửi form để tìm hiểu (do sợ lộ data, do prompt quá lằng nhằng?) làm bài học rút kinh nghiệm.
+11. **Lời hứa giao gì (Realistic)**: Giao nộp báo cáo kết quả đánh giá chất lượng prompt (tỷ lệ câu hỏi bám đúng Gate), độ thay đổi lỗi Gate trên 3-5 draft trước/sau pilot, và bộ "Prompt tối ưu" (kể cả khi kết luận cuối cùng là tool AI chưa đủ tin cậy thay thế con người).
+12. **Lời xin (Rõ ràng)**: Xin phê duyệt ngân sách ~20 USD, quỹ thời gian ~10 giờ của 1 Coach chuyên trách để đồng hành lấy baseline/review, và quyền tiếp cận 3-5 nhóm tiên phong tham gia thử nghiệm Phase 1.
 
 ---
 
@@ -76,11 +74,11 @@ Câu hỏi phụ (tự trả lời):
 
 | Hạng mục | Xong? |
 |---|---|
-| Tóm vấn đề trong 1 câu | / |
-| Budget tách hạng mục, không "miscellaneous" | / |
-| Metric có baseline + ngưỡng + ai đo | / |
-| Exit criteria có người có quyền thực thi (≥2 mức) | / |
-| Adoption: chỉ rõ ai dùng đầu tiên (không "cả khóa") | / |
+| Tóm vấn đề trong 1 câu | [x] |
+| Budget tách hạng mục, không "miscellaneous" | [x] |
+| Metric có baseline + ngưỡng + ai đo | [x] |
+| Exit criteria có người có quyền thực thi (≥2 mức) | [x] |
+| Adoption: chỉ rõ ai dùng đầu tiên (không "cả khóa") | [x] |
 
 ⚑ Coach kiểm tra ở Mốc 4: *"Xin gì? Hứa gì? Đo gì? Dừng khi nào?"*
 
