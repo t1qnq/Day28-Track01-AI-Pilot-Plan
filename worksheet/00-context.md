@@ -49,7 +49,7 @@ Xây một công cụ AI mô phỏng business owner/domain expert để phản b
 
 ## 4. Ghi chú thêm (tùy nhóm)
 
-Nhóm chọn hướng Quick Win nhỏ: AI sinh 5 câu phản biện cho AI Pilot Plan Day28 và mô phỏng 1 phiên business owner Q&A trong 5 phút. Pilot chỉ dùng dữ liệu mẫu/giả định từ worksheet Day28, rubric 5 Gate và 5-slide pitch; không dùng dữ liệu riêng tư ngoài bài nộp nhóm tự cung cấp.
+Nhóm chọn hướng Quick Win nhỏ: AI sinh 5 câu phản biện bám rubric 5 Gate cho AI Pilot Plan Day28. Phần mô phỏng business owner Q&A trong 5 phút là cách dùng thử trong pilot, không phải hệ thống chấm điểm. Pilot chỉ dùng dữ liệu mẫu/giả định từ worksheet Day28, rubric 5 Gate và 5-slide pitch; không dùng dữ liệu riêng tư ngoài bài nộp nhóm tự cung cấp.
 
 ---
 
