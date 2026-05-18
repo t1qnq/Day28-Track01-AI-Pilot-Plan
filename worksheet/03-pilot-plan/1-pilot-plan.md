@@ -39,9 +39,9 @@ Câu hỏi phụ (tự trả lời):
 2. **Cách làm + Lý do KHÔNG chọn cách khác**: **Boost** — dùng AI chat tool/API có sẵn kết hợp prompt và rubric 5 Gate. KHÔNG tự build model vì tính năng này không phải lợi thế cạnh tranh cốt lõi, phần quan trọng nhất cần kiểm chứng là chất lượng câu hỏi từ prompt có bám sát rubric hay không.
 3. **Phạm vi (Scope)**: Phục vụ 25-27 nhóm học viên (track Product) đang chuẩn bị pitch. Chạy thử nghiệm trong 2 tuần, chia 2 phase nhỏ (thử trên 3-5 nhóm trước, sau đó mở rộng).
 4. **Người (Nhân sự & Quyền hạn)**: Nhóm 3 (Quang, Hưng, Thuận) chịu trách nhiệm build prompt và setup. **Coach/Instructor** đóng vai trò expert review bắt buộc cho 20 output đầu. AI KHÔNG được tự quyết định điểm số/kết quả (pass/fail).
-5. **Dữ liệu & Privacy**: Sử dụng dữ liệu draft AI Pilot Plan và worksheet học viên (ẩn danh, tự nguyện nộp). Dùng model API với zero data retention policy để bảo mật thông tin. Yêu cầu AI bắt buộc **citation** (trích dẫn) Gate hoặc rubric tương ứng khi phản biện.
+5. **Dữ liệu & Privacy**: Sử dụng dữ liệu draft AI Pilot Plan và worksheet học viên (ẩn danh, tự nguyện nộp). Không lưu transcript ngoài phạm vi pilot; nếu cần lưu để coach review thì chỉ lưu bản ẩn danh, giới hạn người xem và xóa sau khi tổng hợp insight. Chọn tool/API có cấu hình lưu dữ liệu tối thiểu theo chính sách hiện hành. Yêu cầu AI bắt buộc **citation** (trích dẫn) Gate hoặc rubric tương ứng khi phản biện.
 6. **Ngân sách (Budget) TỪNG HẠNG MỤC (đã bóc tách)**:
-   - Chi phí API/Tool (OpenAI GPT-4o): Tối đa ~20 USD (khoảng 25 nhóm x vài lượt hỏi).
+   - Chi phí API/Tool (model/chat tool có sẵn): Tối đa ~20 USD (khoảng 25 nhóm x vài lượt hỏi, tùy model/token thực tế).
    - Thời gian Coach/Instructor (Chi phí người ẩn): ~5-7 giờ để review chất lượng 20 câu hỏi đầu và 2-3 giờ hỗ trợ chấm baseline (so sánh draft trước/sau khi nhóm dùng tool).
    - Thời gian nhóm 3 setup & monitor: ~15 giờ trong 2 tuần.
    - Thời gian học viên (Hạng mục ẩn): 15-20 phút/nhóm để đọc hướng dẫn và dùng thử.

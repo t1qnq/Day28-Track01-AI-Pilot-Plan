@@ -32,8 +32,8 @@ Kéo nguyên liệu từ các file đã làm, đừng viết mới. Khung đầy
 | # | Slide | Lấy từ | Nội dung 1–2 gạch đầu dòng | Ai nói |
 |---|---|---|---|---|
 | 1 | Problem & user | 01-frame/3-FINAL | - Thiếu công cụ tự rà soát trước pitch, gây mất thời gian Q&A các lỗi cơ bản. <br> - Người dùng: 25-27 nhóm học viên track Product. | Quang |
-| 2 | Breakdown & Quick Win | 01-frame/1,2 | - Bóc tách: Mô phỏng chuyên gia Q&A 5 phút. <br> - Quick Win: AI sinh 5 câu phản biện bám rubric 5 Gate. | Hưng |
-| 3 | Solution + bản vẽ trực quan | 02-solution/2-FINAL | - Boost: Sử dụng API có sẵn + Prompt + Zero data retention. <br> - Flow: Draft vào → AI phân tích 5 Gate → 5 câu hỏi/phản biện → Coach review. | Hưng |
+| 2 | Breakdown & Quick Win | 01-frame/1,2 | - Bóc tách: từ full Expert Review Simulator thành các use case nhỏ: sinh câu hỏi, Q&A thử, red-team Problem Framing, privacy review, coach report. <br> - Quick Win: AI sinh 5 câu phản biện bám rubric 5 Gate; Q&A 5 phút chỉ là cách dùng thử, không phải hệ thống chấm điểm. | Hưng |
+| 3 | Solution + bản vẽ trực quan | 02-solution/2-FINAL | - Boost: sử dụng model/chat tool có sẵn + prompt + rubric 5 Gate + kiểm soát lưu dữ liệu tối thiểu. <br> - Flow: Draft vào → AI phân tích 5 Gate → 5 câu hỏi/phản biện → Coach review. | Hưng |
 | 4 | AI Pilot Plan | 03-pilot-plan/1 | - Scope: 2 tuần, chia 2 phase (Phase 1 thử 3-5 nhóm). <br> - Budget: 20 USD API, 10h của Coach (review 20 mẫu & đo baseline), 15h của nhóm. | Thuận |
 | 5 | Metric · exit criteria · **lời xin** | 03-pilot-plan/1 | - Metric: 80% câu bám Gate, giảm 50% lỗi. <br> - Exit: Dừng ngay nếu AI phán quyết Pass/Fail. <br> - **Lời xin**: Xin 20 USD, 10h Coach, 3-5 nhóm tiên phong; hứa giao Báo cáo chất lượng và Bộ Prompt tối ưu. | Thuận |
 
@@ -63,7 +63,7 @@ Business owner/instructor sẽ hỏi mỗi nhóm 1–2 câu. Viết sẵn câu t
 | Slide 5 có lời xin rõ ràng (xin gì · hứa gì) | [x] |
 | Có câu trả lời sẵn cho cả 3 câu phản biện | [x] |
 | AI Support Log điền đủ 3 dòng | [x] |
-| Tất cả file worksheet/ đã commit + push, link dán vào Discord | [x] |
+| Tất cả file worksheet/ đã commit + push, link dán vào Discord | [ ] |
 
 Đây là file cuối. Pitch 5 phút + nhận phản biện theo bảng 5 Gate (`templates/rubric-gate-sheet.md`).
 
